@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>724</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>711</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Параметры</string>
+     </attribute>
+     <widget class="QLineEdit" name="n_buf_edit">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>210</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="n_ist_edit">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>40</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="tay1_spin">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.400000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>140</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Количество Приборов:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>70</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tay1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>100</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tay2:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="kmin_edit">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>250</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>40</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Количество Источников:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>210</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Длина буфера:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>170</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lambda:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="n_prib_edit">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>250</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Минимальное количество заявок</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="tay2_spin">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>100</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.600000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="lambda_spin">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>170</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="value">
+       <double>2.500000000000000</double>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modulateButton">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>290</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Смоделировать</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Пошаговый режим</string>
+     </attribute>
+     <widget class="QTableWidget" name="eventTable">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>391</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>70</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Событие</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ID Заявка</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Время</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Заявок</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Отказов</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QTableWidget" name="priborTable">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>30</y>
+        <width>271</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>60</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>No прибора</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>время освобожд.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>источник</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>10</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Приборы</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>190</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Буфер</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="bufferTable">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>210</y>
+        <width>271</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>60</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>позиция</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>время поступления</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>источник</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="nextStepButton">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>380</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Следующий шаг</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Таблица результатов</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>521</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>600</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>50</number>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>20</number>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>30</number>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>№ источника</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>количество заявок</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Pотк</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Тпреб</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Тбуф</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Тобсл</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Дбуф</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Добсл</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>521</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>№ прибора</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Коэффициент использования</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>724</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
